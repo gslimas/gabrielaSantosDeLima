@@ -1,8 +1,25 @@
 body{
-    background-image: url("../img/template-fundo-site-conseitos-opticos-4.jpg");
+    margin: 0;
+}
+
+.img-fundo{
+    background-image: url("../img/impulso-network-começar-a-programar.jpeg");
+    background-size: cover ;
+    background-position: center center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+
 }
 .menu{
-    
     height: 50px;
     padding: 5px;
     border-width: 1px;
@@ -10,7 +27,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
 }
 a:hover{
     text-decoration: underline;
@@ -26,7 +43,7 @@ a:hover{
 .site-subtitle,
 .site-title{
     text-align: center;
-    color: whitesmoke;
+    color: black;
 }
 
 .site-subtitle{
