@@ -1,0 +1,34 @@
+body{
+    background-image: url("../img/template-fundo-site-conseitos-opticos-4.jpg");
+}
+.menu{
+    
+    height: 50px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: inset;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    text-decoration: underline;
+}
+.menu li{
+    list-style: none;
+    position: relative;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+.site-subtitle,
+.site-title{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.site-subtitle{
+    font-style: italic;
+}
