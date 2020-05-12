@@ -1,5 +1,22 @@
-body{
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+}
+
+@media(min-width:400px){
+    body{
+        font-size: 14px;
+    }
+}
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-fundo{
@@ -20,11 +37,19 @@ body{
 
 }
 .menu{
-    height: 50px;
-    padding: 5px;
-    border-width: 1px;
-    border-style: inset;
+    width: 100vw;
+    padding: 10px;
+    border-bottom: 1px;
+    border-style: inherit;
+    position: fixed;
+    top: 0;
+    background-color: rgb(222, 215, 226);
 }
+.menu a{
+    display: block;
+    padding: 10px 20px;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -48,4 +73,23 @@ a:hover{
 
 .site-subtitle{
     font-style: italic;
+}
+
+.img-profile{
+    width: auto;
+    height: 100%;
+    
+}
+
+.image-cropper{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-portfolio{
+    width: 180px;
+    height: 180px;
 }
