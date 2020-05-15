@@ -28,8 +28,8 @@ header{
     right: 0;
     z-index: -1;
     display: block;
-    -webkit-filter: blur(20px);
-    filter: blur(20px);
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
     min-height: 100%;
     min-width: 1024px;
     width: 100%;
@@ -43,7 +43,6 @@ header{
     border-style: inherit;
     position: fixed;
     top: 0;
-    background-color: rgb(222, 215, 226);
 }
 .menu a{
     display: block;
@@ -70,9 +69,39 @@ a:hover{
     text-align: center;
     color: black;
 }
+.portifolio .grid{
+    display: grid;
+    gap: 2em;
+}
 
+@media(min-width: 560px){
+    .portifolio .grid{
+        grid-template-columns: 240px;
+    }
+}
+@media(min-width: 880px){
+    .portifolio .grid{
+        grid-template-columns: 240px 240px 240px;
+        justify-content: center;
+    }
+}
+.portifolio figure{
+    text-align: center;
+}
+.site-title{
+    font-family: 'Pacifico', cursive;
+}
 .site-subtitle{
-    font-style: italic;
+    font-family: 'Indie Flower', cursive;
+}
+
+.portifolio h2{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+.portifolio{
+    padding: 2em;
 }
 
 .img-profile{
@@ -90,6 +119,10 @@ a:hover{
 }
 
 .img-portfolio{
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
+}
+
+figcaption{
+    font-size: 20px;
 }
